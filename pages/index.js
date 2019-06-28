@@ -1,8 +1,11 @@
+import Hello from '../components/Hello';
+
 function Home() {
   return <>
-    Hi there!<br/>
-    <a href="/aboutme"> aboutme</a>
-  </>
+    <Hello name='Zuz' /><br/>
+    <a href="/aboutme">ABOUT ME</a>
+    
+  </>;
 }
 
 export default Home;
