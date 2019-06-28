@@ -1,7 +1,8 @@
-import React from 'react';
-
 function Home() {
-  return React.createElement("h1", null, "Shopping List for ")
+  return <>
+    Hi there!<br/>
+    <a href="/aboutme"> aboutme</a>
+  </>
 }
 
 export default Home;
