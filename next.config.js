@@ -1,5 +1,11 @@
-const withPages = require('@primer/next-pages/plugin')
+module.exports = {
+  exportPathMap: async function(defaultPathMap) {
+    return {
+      '/': { page: '/' },
+      '/aboutme': { page: '/aboutme' },
+    };
+  }
+};
 
-module.exports = withPages({
-  /* your config */
-})
+const withPages = require('@primer/next-pages/plugin')
+module.exports = withPages(module.exports)

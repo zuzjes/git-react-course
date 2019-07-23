@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@primer/components": "^13.1.0",
+    "@primer/components": "^13.2.0",
     "@primer/next-pages": "^0.0.3",
     "next": "^8.1.0",
     "react": "^16.8.6",
@@ -10,6 +10,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "static": "npm run build && next export",
+    "now-build": "yarn run static"
   }
 }
